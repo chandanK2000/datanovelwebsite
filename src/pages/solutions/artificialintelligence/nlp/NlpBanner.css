@@ -1,0 +1,114 @@
+/* Section styling */
+.nlp-banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 500px;
+    background: url('../../../../assets/images/nlpimages/nlpbannerimages.png') no-repeat center center/cover;
+    padding: 100px 50px;
+    position: relative;
+    background-position: top;
+}
+
+/* Content container */
+.nlp-banner-content {
+    text-align: right;
+    color: #fff;
+    z-index: 2;
+}
+
+/* Banner title */
+.nlp-banner-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+}
+
+/* Banner paragraph */
+.nlp-banner-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Banner button */
+.nlp-banner-button {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #4CAF4F;
+}
+
+.nlp-banner-button:hover {
+    background: linear-gradient(90deg, #FFB43B 0%, #E20D9B 100%);
+}
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Large tablets / laptops */
+@media (max-width: 1024px) {
+    .nlp-banner-section {
+        padding: 80px 40px;
+        justify-content: center;
+    }
+    .nlp-banner-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .nlp-banner-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    .nlp-banner-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Tablets / iPads */
+@media (max-width: 768px) {
+    .nlp-banner-section {
+        padding: 60px 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .nlp-banner-title {
+        font-size: 26px;
+    }
+    .nlp-banner-text {
+        font-size: 15px;
+    }
+    .nlp-banner-button {
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile / iPhone 16 Pro (~430px) */
+@media (max-width: 430px) {
+    .nlp-banner-section {
+        padding: 40px 20px;
+        min-height: 380px;
+        background-position: right center;
+    }
+    .nlp-banner-title {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .nlp-banner-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .nlp-banner-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,110 @@
+.whychoose-nlp-section {
+    background: #F5F7FA;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.whychoose-nlp-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #04275B;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.whychoose-nlp-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #FFB43B 0%, #E20D9B 100%);
+    margin: 6px auto 0;
+    border-radius: 2px;
+}
+
+/* Cards container */
+.row-choose-nlp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px !important;
+}
+
+/* Card */
+.nlp-card {
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    max-width: 360px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #4D4D4D;
+
+
+}
+
+
+
+/* Card icon */
+.nlp-card-icon {
+    width: 380px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Card title */
+.nlp-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #04275B;
+    line-height: 1.4;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .nlp-card {
+        max-width: 300px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nlp-card {
+        max-width: 250px;
+        padding: 18px;
+    }
+
+    .nlp-card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nlp-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    
+.whychoose-nlp-section h2 {
+    font-size: 20px;
+   
+}
+    .nlp-card-title {
+        font-size: 14px;
+    }
+
+    .whychoose-nlp-section {
+        padding: 40px 15px;
+    }
+}

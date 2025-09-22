@@ -1,0 +1,159 @@
+.how-agenticwork-section {
+    padding: 40px 20px;
+    background: #04275B;
+}
+
+/* Heading */
+.how-agenticwork-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Container: image + content */
+.how-agenticwork-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Left Side - Image + H4 title */
+.how-agenticwork-image {
+    flex: 1;
+    /* 50% width on desktop */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-agenticwork-image h4.agentic-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.how-agenticwork-image h4.agentic-title span {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(88.85deg, #F0F55E 14.27%, #FFB01F 92.9%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    top: 15px;
+    /* moves the "AI" slightly downward */
+    display: inline-block;
+}
+
+
+/* Image styling */
+.how-agenticwork-image img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+}
+
+/* Right Side - Content */
+.how-agenticwork-content {
+    flex: 1;
+    /* 50% width on desktop */
+}
+
+/* Each box inside content */
+.how-agenticwork-box {
+    margin-bottom: 25px;
+}
+
+/* Box headings */
+.how-agenticwork-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* List items */
+.how-agenticwork-box ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .how-agenticwork-section h2 {
+        font-size: 28px;
+    }
+
+    .how-agenticwork-box h3 {
+        font-size: 18px;
+    }
+}
+
+/* Small tablets / large phones (768px and below) */
+@media (max-width: 768px) {
+    .how-agenticwork-container {
+        flex-direction: column;
+        /* stack image + content */
+        align-items: center;
+    }
+
+    .how-agenticwork-content {
+        width: 100%;
+    }
+
+    .how-agenticwork-image h4.agentic-title {
+        font-size: 18px;
+    }
+
+    .how-agenticwork-image h4.agentic-title span {
+        font-size: 22px;
+    }
+
+    .how-agenticwork-box h3 {
+        font-size: 18px;
+    }
+
+    .how-agenticwork-box ul {
+        padding-left: 18px;
+    }
+}
+
+/* Mobile / iPhone 16 (430px and below) */
+@media (max-width: 430px) {
+    .how-agenticwork-section {
+        padding: 30px 15px;
+    }
+
+    .how-agenticwork-section h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .how-agenticwork-image h4.agentic-title {
+        display: none;
+    }
+
+    .how-agenticwork-image h4.agentic-title span {
+        display: none;
+    }
+
+    .how-agenticwork-box h3 {
+        font-size: 16px;
+    }
+
+    .how-agenticwork-box ul {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+}

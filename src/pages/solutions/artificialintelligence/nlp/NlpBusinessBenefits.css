@@ -1,0 +1,169 @@
+.nlp-benefits-section {
+    padding: 30px 20px;
+    text-align: center;
+    background: #04275B;
+}
+
+/* Heading */
+.nlp-benefits-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    position: relative;
+    display: inline-block;
+}
+
+.nlp-benefits-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #FFB43B 0%, #E20D9B 100%);
+    margin: 6px auto 0;
+    border-radius: 2px;
+}
+
+.nlp-benefits-section p {
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+/* Grid */
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* reduced gap */
+    justify-content: center;
+}
+
+/* Card */
+.benefits-card {
+    padding: 18px;
+    border-radius: 8px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    cursor: pointer;
+    background: #F5F7FA;
+}
+
+.benefits-card:hover {
+    opacity: 0.95;
+}
+
+/* Header inside card */
+.benefits-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.benefits-icon {
+    color: #FA6000;
+    font-size: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+.benefits-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #04275B;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.benefits-card p {
+    font-size: 14px;
+    color: #04275B;
+    line-height: 1.5;
+    margin: 3px 0 0 30px;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .benefits-card {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+    .nlp-benefits-section h2 {
+        font-size: 26px;
+    }
+}
+
+/* Medium tablets */
+@media (max-width: 768px) {
+    .benefits-card {
+        flex: 1 1 48%;
+        max-width: 48%;
+        padding: 16px;
+    }
+    .nlp-benefits-section h2 {
+        font-size: 24px;
+    }
+    .nlp-benefits-section p {
+        font-size: 15px;
+    }
+    .benefits-card h3 {
+        font-size: 16px;
+    }
+    .benefits-card p {
+        font-size: 13px;
+        margin-left: 28px;
+    }
+}
+
+/* Small devices & iPhone landscape */
+@media (max-width: 576px) {
+    .benefits-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 14px;
+    }
+    .nlp-benefits-section h2 {
+        font-size: 22px;
+    }
+    .nlp-benefits-section p {
+        font-size: 14px;
+    }
+    .benefits-card h3 {
+        font-size: 15px;
+    }
+    .benefits-card p {
+        font-size: 13px;
+        margin-left: 25px;
+    }
+}
+
+/* Extra small devices / iPhone 16 Pro */
+@media (max-width: 430px) {
+    .nlp-benefits-section {
+        padding: 20px 15px;
+    }
+    .nlp-benefits-section h2 {
+        font-size: 20px;
+    }
+    .nlp-benefits-section p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .benefits-grid {
+        gap: 8px;
+    }
+    .benefits-card {
+        padding: 12px;
+    }
+    .benefits-card h3 {
+        font-size: 14px;
+    }
+    .benefits-card p {
+        font-size: 12px;
+        margin-left: 22px;
+    }
+}

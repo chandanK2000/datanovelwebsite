@@ -1,0 +1,165 @@
+.digital-transformation-faq {
+  padding: 60px 20px;
+  background: radial-gradient(57.52% 57.52% at 34.47% 42.48%, #0F2734 0%, #051118 100%) ;
+  color: #fff;
+}
+
+/* Title of the FAQ Section */
+.faq-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Accordion Container */
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Accordion Item Box Shadow and Spacing */
+.accordion-item {
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px #D9D9D980;
+  /* border: 1px solid green; */
+  padding: 15px 20px;
+  color: #FFFFFF;
+}
+
+/* Accordion Button Styling */
+.accordion-button {
+  font-weight: 600;
+  color: #333;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Accordion Button Focus Removal */
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Custom + / - Sign */
+.accordion-button::before {
+  content: "+";
+  position: absolute;
+  right: -20px;
+  top:-15px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  background-color: #4FA9E2;
+  border-radius: 0px 5px 0px 0px;
+  padding: 4px 8px;
+}
+
+/* When expanded, show minus */
+.accordion-button:not(.collapsed)::before {
+  content: "-";
+
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+  padding: 15px 20px;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* FAQ Image Styling */
+.faq-image {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  /* This ensures it behaves as a container for the images */
+}
+
+/* Second image (the one that will be on top) */
+.faq-image::before {
+  content: "";
+  display: block;
+  background-image: url('../../../../assets/images/faqdigital.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+  border-radius: 8px;
+  position: absolute;
+  top: -20px;
+  left: 200px;
+  z-index: 2;
+}
+
+/* Make the images stack properly on smaller devices */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .accordion-button {
+    font-size: 18px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  /* Hide the FAQ image (including the ::before) on smaller devices */
+  .faq-image,
+  .faq-image::before {
+    display: none;
+    /* Hides the image */
+  }
+
+  /* Mobile Layout for the Accordion (Ensures it’s more readable on small screens) */
+  .accordion-container {
+    gap: 15px;
+  }
+
+  /* Responsive adjustments for padding */
+  .digital-transformation-faq {
+    padding: 40px 15px;
+    /* Slightly less padding for smaller screens */
+  }
+
+  .faq-title {
+    text-align: center;
+    /* Center the title on mobile */
+  }
+}
+
+/* Additional Styling for FAQ Section (optional) */
+.faq-section {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #333;
+}
+
+.faq-question {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}

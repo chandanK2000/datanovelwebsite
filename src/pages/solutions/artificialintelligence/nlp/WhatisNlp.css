@@ -1,0 +1,105 @@
+.whatis-nlp-section {
+    position: relative;
+    background: url('../../../../assets/images/nlpimages/whatnlpimage.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 250px;
+    /* padding: 50px 20px; */
+}
+
+.whatis-nlp-overlay {
+    padding: 40px 20px;
+    border-radius: 12px;
+    color: #fff;
+    max-width: 800px;
+}
+
+.whatis-nlp-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.whatis-nlp-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #FFB43B 0%, #E20D9B 100%);
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.whatis-nlp-section p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Large tablets / laptops */
+@media (max-width: 1024px) {
+    .whatis-nlp-section {
+        padding: 40px 20px;
+        min-height: 280px;
+    }
+    .whatis-nlp-section h2 {
+        font-size: 28px;
+    }
+    .whatis-nlp-section p {
+        font-size: 16px;
+    }
+}
+
+/* Tablets / iPads */
+@media (max-width: 768px) {
+    .whatis-nlp-section {
+        padding: 35px 15px;
+        min-height: 200px;
+    }
+    .whatis-nlp-section h2 {
+        font-size: 26px;
+    }
+    .whatis-nlp-section p {
+        font-size: 15px;
+    }
+}
+
+/* Small tablets & iPhone landscape */
+@media (max-width: 576px) {
+    .whatis-nlp-section {
+        padding: 20px 15px;
+        min-height: 200px;
+    }
+    .whatis-nlp-section h2 {
+        font-size: 24px;
+    }
+    .whatis-nlp-section p {
+        font-size: 14px;
+    }
+}
+
+/* iPhone 16 / small devices */
+@media (max-width: 430px) {
+    .whatis-nlp-section {
+        padding: 15px 10px;
+        min-height: 180px;
+    }
+    .whatis-nlp-section h2 {
+        font-size: 22px;
+    }
+    .whatis-nlp-section h2::after {
+        width: 60px; 
+    }
+    .whatis-nlp-section p {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}

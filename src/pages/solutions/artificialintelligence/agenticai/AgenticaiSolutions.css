@@ -1,0 +1,134 @@
+.agenticai-solution-section {
+    padding: 40px 20px;
+    background-color: rgb(175, 175, 177);
+    text-align: center;
+}
+
+.agenticai-solution-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #04275B;
+}
+
+/* Flow container */
+.solution-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Each block */
+.solution-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Rectangular block with gradient and shadow */
+.solution-text {
+    background: linear-gradient(135deg, #0B9328, #35A54A);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0px 20px;
+    font-weight: 400;
+    text-align: center;
+    white-space: pre-line;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.solution-text:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Connector symbol */
+.solution-connector {
+    font-size: 28px;
+    font-weight: bold;
+    /* color: #0B9328; */
+    color: white;
+    position: relative;
+    top: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Different gradients for each block */
+.solution-flow .solution-block:nth-child(1) .solution-text {
+    background: linear-gradient(135deg, #0B9328, #35A54A);
+}
+
+.solution-flow .solution-block:nth-child(2) .solution-text {
+    background: linear-gradient(135deg, #2EA44F, #3FCF7F);
+}
+
+.solution-flow .solution-block:nth-child(3) .solution-text {
+    background: linear-gradient(135deg, #1E7A1F, #55C667);
+}
+
+.solution-flow .solution-block:nth-child(4) .solution-text {
+    background: linear-gradient(135deg, #3FA55A, #66DF85);
+}
+
+.solution-flow .solution-block:nth-child(5) .solution-text {
+    background: linear-gradient(135deg, #0F6B19, #49D974);
+}
+
+/* ✅ Responsive: tablets */
+@media (max-width: 768px) {
+    .solution-text {
+        padding: 12px 16px;
+        min-width: 120px;
+        font-size: 14px;
+    }
+
+    .solution-connector {
+        font-size: 20px;
+    }
+}
+
+/* ✅ Responsive: small devices / mobiles */
+@media (max-width: 480px) {
+    .solution-flow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .agenticai-solution-section h2 {
+        font-size: 24px;
+    }
+
+    .solution-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5px; /* reduce gap */
+    }
+
+    .solution-text {
+        width: 100%;
+        min-width: auto;
+        border-radius: 12px;
+        padding: 20px 16px; /* reduce padding to make space for connector */
+        font-size: 14px;
+        white-space: normal;
+        box-sizing: border-box;
+    }
+
+    /* Connector arrow visible */
+    .solution-connector {
+        display: block;
+        transform: rotate(90deg); /* arrow points down */
+        font-size: 18px;
+        margin: -5px 0 5px; /* adjust spacing between blocks */
+        color: #0B9328;
+    }
+}
